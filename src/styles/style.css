@@ -1,0 +1,187 @@
+@font-face{
+    src: url(../fonts/ShareTechMono-Regular.ttf);
+    font-family: "Share Tech Mono";
+}
+body{
+    box-sizing: border-box;
+    background-color:gainsboro;
+    padding:0;
+    margin:0;
+}
+
+header{
+    padding:5px;
+    box-sizing: border-box;
+    min-height: 50px;
+    background-color: rgb(181, 208, 219);
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    border: 1px dotted grey;
+    border-radius: 5px;
+    float: left;
+    background-image: url(/src/icons/icons8-battle-50.png);
+}
+
+.status {
+    font-family: "Share Tech Mono";
+    width: 55%;
+    height: 60px;
+    border: 1px dotted green;
+    margin: auto;
+    background-color: rgb(198, 223, 235);
+    display: flex;
+    align-items: center;
+    font-size: 1.21em;
+    padding-left: 7px;
+}
+
+.content{
+    font-family: "Share Tech Mono";
+    min-height: 460px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin:0;
+    background-color: rgb(181, 208, 219);
+}
+
+.field {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    height:440px;
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    margin:0;
+}
+
+.cell{
+    box-sizing: border-box;
+    width:40px;
+    height:40px;
+    border: 1px dotted rgb(80, 162, 209);
+    margin:0;
+}
+
+.name{
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: navy;
+}
+
+.simple{
+    background-color: rgb(236, 238, 237);
+}
+
+.myShip{
+    background-color: rgb(179, 197, 197);
+}
+
+.enemyShip {
+    background-color: rgb(84, 189, 189);
+}
+
+.moving{
+    background-color: rgba(135, 204, 32,1);
+}
+
+.error{
+    background-color: rgba(240, 36, 36,1);
+}
+
+.hit{
+    background-image: url(../icons/icons8-cross-40.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.miss{
+    background-image: url(../icons/icons8-circle-10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.controllers{
+    margin-top: 5px;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.info {
+    width: 440px;
+    flex: 0 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: navy;
+}
+
+#randomise {
+    display: inline-block;
+}
+
+#randomise img{
+    position: relative;
+    top: 10px;
+}
+
+.info p{
+    margin:0;
+    padding:5px;
+}
+
+footer{
+    height:20px;
+    border-top: 1px dotted rgb(0, 87, 128);
+    text-align: center;
+}
+
+.notes {
+    font-size: 0.7em;
+}
+
+#start {
+    font-weight: bold;
+    font-size: medium;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    background-color: rgb(17, 156, 180);
+    height: 30px;
+    width: 135px;
+    border-radius: 10px;
+    border: none;
+    color:rgb(247, 245, 242);
+}
+
+#start:hover{
+    background-color: rgb(17, 156, 180);
+    color:rgb(255, 255, 252); 
+    background-image: url(../icons/icons8-accuracy-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px dotted rgb(22, 21, 21);
+}
+
+#start.inactive{
+    color: rgb(152, 161, 163);
+    background-color: rgb(17, 156, 180);
+    background-image: none;
+}
+
+#start.inactive:hover{
+    background-color: rgb(17, 156, 180);
+    color: rgb(152, 161, 163);
+}
